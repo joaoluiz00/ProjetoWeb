@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="titulo">Título de nivel 1</h1>
+
+    <p id="parágrafo">Este é um parágrafo</p>
+    <ul>
+        <li id="itens">Item 1</li>
+        <li id="itens">Item 2</li>
+    </ul>
+
+    <button type="button" id="botao">Clique aqui!</button>
+
+    <script>
+
+        let mudar = 0;
+        
+        function processarPagina(){
+            const titulo = document.getElementById('titulo');
+            if (mudar ==0){
+                titulo.textContent = "Novo Título";
+                mudar = 1;
+            } else {
+                titulo.textContent = "Título de nível 1";
+                mudar = 0;
+            }
+
+        }
+        document.getElementById('botao').addEventListener('click', processarPagina);
+
+    </script>
+    
+</body>
+</html>
