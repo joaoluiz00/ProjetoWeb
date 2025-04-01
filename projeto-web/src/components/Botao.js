@@ -1,10 +1,11 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 
 const Botao = ( {texto, aoClicar}) => {
     return(
-        <button onClick={aoClicar}>
+        <Button onClick={aoClicar} variant='primary'>
            {texto}
-        </button>
+        </Button>
     )
 }
 
